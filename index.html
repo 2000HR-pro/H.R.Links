@@ -123,25 +123,9 @@
   © 2026 H.R
 </footer>
 
-  </div>  <script>
-
-<audio id="bgMusic" loop>
-  <source src="Music.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-  function playAudio() {
-    document.getElementById('bgMusic').play();
-    document.removeEventListener('click', playAudio);
-    document.removeEventListener('touchstart', playAudio);
-  }
-  document.addEventListener('click', playAudio);
-  document.addEventListener('touchstart', playAudio);
-</script>
-
-
-    
-
-    
+</div>  <script>
+    function toggleMode() {
+      document.body.classList.toggle("light");
+    }
   </script></body>
 </html>

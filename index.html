@@ -127,5 +127,19 @@
     function toggleMode() {
       document.body.classList.toggle("light");
     }
+<audio id="bgMusic" loop>
+  <source src="Xxxtentacion - Numb (Lyrics)(MP3_160K).mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  // كود لتشغيل الموسيقى بمجرد أن يضغط المستخدم في أي مكان في الصفحة
+  document.addEventListener('click', function() {
+    var audio = document.getElementById('bgMusic');
+    audio.play();
+  }, { once: true }); // يعمل مرة واحدة فقط عند أول ضغطة
+</script>
+
+    
   </script></body>
 </html>

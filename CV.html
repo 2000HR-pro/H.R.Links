@@ -12,14 +12,12 @@
       --text: #ffffff;
       --accent: #00c6ff;
     }
-
     body.light {
       --bg: #f4f4f4;
       --card: #ffffff;
       --text: #222;
       --accent: #0077ff;
     }
-
     body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
@@ -27,14 +25,12 @@
       color: var(--text);
       transition: 0.4s;
     }
-
     .container {
       max-width: 400px;
       margin: auto;
       padding: 20px;
       text-align: center;
     }
-
     .profile img {
       width: 120px;
       height: 120px;
@@ -43,14 +39,11 @@
       border: 4px solid var(--accent);
       animation: float 3s ease-in-out infinite;
     }
-
     @keyframes float {
       0%,100% { transform: translateY(0); }
       50% { transform: translateY(-10px); }
     }
-
     h1 { margin: 10px 0; }
-
     .links a {
       display: flex;
       align-items: center;
@@ -68,97 +61,64 @@
       overflow: hidden;
       font-weight: 500;
     }
-
-    .fa-whatsapp { color: #25D366; }
-    .fa-facebook { color: #1877F2; }
-    .fa-instagram { color: #E4405F; }
-    .fa-snapchat { color: #FFFC00; text-shadow: 0 0 2px black; }
-    .fa-tiktok { color: #000000; } 
-    body.light .fa-tiktok { color: #000; }
-    .fa-telegram { color: #0088cc; }
-    .fa-youtube { color: #FF0000; }
-    .fa-envelope { color: #EA4335; }
-    .fa-linkedin { color: #0077B5; }
-    .fa-x-twitter { color: #000000; }
-    body.light .fa-x-twitter { color: #000; }
-
     .links a:hover {
       transform: scale(1.05);
       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
-
-    .toggle {
-      margin: 15px;
-      cursor: pointer;
-      padding: 10px 15px;
-      border-radius: 20px;
-      border: none;
-      background: var(--accent);
-      color: white;
-      font-weight: bold;
-    }
-
-    footer {
-      margin-top: 30px;
-      font-size: 14px;
-      opacity: 0.7;
-    }
+    .cv-btn { border: 2px solid var(--accent) !important; background: rgba(0, 198, 255, 0.1) !important; }
+    .toggle { margin: 15px; cursor: pointer; padding: 10px 15px; border-radius: 20px; border: none; background: var(--accent); color: white; font-weight: bold; }
+    footer { margin-top: 30px; font-size: 14px; opacity: 0.7; }
+    /* Icon Colors */
+    .fa-whatsapp { color: #25D366; } .fa-facebook { color: #1877F2; } .fa-instagram { color: #E4405F; }
+    .fa-snapchat { color: #FFFC00; text-shadow: 0 0 2px black; } .fa-telegram { color: #0088cc; }
+    .fa-envelope { color: #EA4335; } .fa-linkedin { color: #0077B5; } .fa-x-twitter { color: #000000; }
+    body.light .fa-x-twitter, body.light .fa-tiktok { color: #000; }
   </style>
 </head>
 <body>
-
 <div class="container">
   <button class="toggle" onclick="toggleMode()">🌙 / ☀️</button>
-
   <div class="profile">
     <img src="IMG-20260322-WA0070.jpg" alt="profile">
     <h1>H.R</h1>
     <p>All My Accounts Are here 👇</p>
   </div>
-
   <div class="links">
-    <a href="mailto:hr9084393@gmail.com" target="_blank" rel="noopener noreferrer">
+    <a href="mailto:hr9084393@gmail.com" target="_blank">
       <i class="fas fa-envelope"></i> Email
     </a>
-    <a href="https://linkedin.com/in/hassan-ragab-32a0aa3bb" target="_blank" rel="noopener noreferrer">
+    <a href="https://linkedin.com/in/hassan-ragab-32a0aa3bb" target="_blank">
       <i class="fab fa-linkedin"></i> LinkedIn
     </a>
-    <a href="https://x.com/HassanRaga41518" target="_blank" rel="noopener noreferrer">
+    <a href="https://x.com/HassanRaga41518" target="_blank">
       <i class="fab fa-x-twitter"></i> X (Twitter)
     </a>
-    <a href="https://wa.me/201121331354?text=Hello%20H.R" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/201121331354?text=Hello%20H.R" target="_blank">
       <i class="fab fa-whatsapp"></i> WhatsApp
     </a>
-    <a href="https://facebook.com/hassan.ragab.75033" target="_blank" rel="noopener noreferrer">
+    <a href="https://facebook.com/hassan.ragab.75033" target="_blank">
       <i class="fab fa-facebook"></i> Facebook
     </a>
-    <a href="https://instagram.com/hassona3.5" target="_blank" rel="noopener noreferrer">
+    <a href="https://instagram.com/hassona3.5" target="_blank">
       <i class="fab fa-instagram"></i> Instagram
     </a>
-    <a href="https://www.snapchat.com/add/hassanragab8213" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.snapchat.com/add/hassanragab8213" target="_blank">
       <i class="fab fa-snapchat"></i> Snapchat
     </a>
-    <a href="https://www.tikTok.com/@hassona.26.2" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.tikTok.com/@hassona.26.2" target="_blank">
       <i class="fab fa-tiktok"></i> TikTok
     </a>
-    <a href="https://t.me/hassona20000" target="_blank" rel="noopener noreferrer">
+    <a href="https://t.me/hassona20000" target="_blank">
       <i class="fab fa-telegram"></i> Telegram
     </a>
-    <a href="CV.html" class="cv-btn">
+    <a href="index.html" class="cv-btn">
       <i class="fas fa-user-tie" style="color: var(--accent);"></i> My Professional CV (Resume)
     </a>
+  </div>
+  <footer>© 2026 H.R</footer>
 </div>
-
-  <footer>
-    © 2026 H.R
-  </footer>
-</div>
-
 <script>
-  function toggleMode() {
-    document.body.classList.toggle("light");
-  }
+  function toggleMode() { document.body.classList.toggle("light"); }
 </script>
-
 </body>
 </html>

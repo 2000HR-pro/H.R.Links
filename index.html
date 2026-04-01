@@ -34,7 +34,7 @@
             background-color: var(--bg-body);
             color: var(--text-main);
             line-height: 1.6;
-            direction: ltr; /* English Output */
+            direction: ltr; 
         }
 
         .container {
@@ -59,14 +59,21 @@
             gap: 15px;
         }
 
+        /* الكود الذي طلبته من الملف الأول */
         .profile-img {
             width: 160px;
             height: 160px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid rgba(255, 255, 255, 0.2);
+            border: 5px solid var(--accent-color);
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            animation: float 3s ease-in-out infinite; /* إضافة الأنميشن */
             transition: var(--transition);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
 
         header h1 {
@@ -126,7 +133,6 @@
             font-weight: 600;
         }
 
-        /* === Languages List === */
         .language-item {
             background-color: #f8f9fa;
             padding: 12px 15px;
@@ -147,7 +153,6 @@
             font-weight: bold;
         }
 
-        /* === Contact Form === */
         .contact-section {
             grid-column: 1 / -1;
             border-top-color: var(--secondary-color);
@@ -195,7 +200,7 @@
 
     <header>
         <div class="container header-content">
-            <img src="IMG-20260322-WA007000.jpeg" alt="Hassan Ragab" class="profile-img">
+            <img src="IMG-20260322-WA0070.jpg" alt="Hassan Ragab" class="profile-img">
             <h1>Hassan Ragab (H.R)</h1>
             <h2>Web Developer & Python Programmer</h2>
         </div>

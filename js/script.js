@@ -1,22 +1,19 @@
-/* --- Dynamic Typing Effect --- */
-const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Python Programmer', 'UI/UX Designer', 'Software Student'],
-    typeSpeed: 70,
-    backSpeed: 70,
-    backDelay: 1500,
-    loop: true
-});
+// وظيفة لجعل العناصر تظهر تدريجياً عند التمرير
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        }
+    }
+}
 
-/* --- Scroll Reveal Animations --- */
-const sr = ScrollReveal({ 
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
-    reset: true 
-});
+window.addEventListener("scroll", reveal);
 
-sr.reveal('.home-content', { origin: 'left' });
-sr.reveal('.home-img', { origin: 'right' });
-sr.reveal('.skill-box', { origin: 'bottom', interval: 200 });
-sr.reveal('.heading', { origin: 'top' });
-sr.reveal('.social-media', { origin: 'bottom' });
+// تشغيل الوظيفة مرة واحدة عند التحميل لإظهار العناصر الموجودة في البداية
+document.addEventListener("DOMContentLoaded", reveal);

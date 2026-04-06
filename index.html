@@ -4,82 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hassan Ragab | Professional Portfolio</title>
-    <link rel="icon" type="image/jpeg" href="images/profile.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="bg-animate">
-        <div class="circle" style="width: 300px; height: 300px; top: 10%; left: -5%;"></div>
-        <div class="circle" style="width: 400px; height: 400px; bottom: 10%; right: -5%; animation-delay: -5s;"></div>
-    </div>
-
     <header>
-        <a href="#" class="logo">H.R</a>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="Links.html" target="_blank" class="project-link">View My Links</a> 
-        </nav>
+        <div class="container header-content">
+            <div class="profile-container">
+                <img src="images/profile.jpg" alt="Hassan Ragab" class="profile-img">
+                <div class="img-glow"></div> </div>
+            <h1>Hassan Ragab <span class="badge">H.R</span></h1>
+            <p class="typing-text">Web Developer & Python Programmer</p>
+        </div>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, I'm Hassan Ragab</h1>
-            <h3>I'm a <span class="multiple-text"></span></h3>
-            <p>A passionate developer dedicated to building high-performance, visually stunning web applications. Specialized in modern frontend technologies and Python automation.</p>
-            
-            <div class="btn-group">
-                <a href="Links.html" target="_blank" class="btn">View My Links</a>
-                <a href="mailto:hr9084393@gmail.com" class="btn btn-outline">Hire Me</a>
-            </div>
+    <div class="container">
+        <main class="grid-layout">
+            <section class="card reveal">
+                <h2><i class="fas fa-user-circle"></i> About Me</h2>
+                <div class="info-item"><strong>Name:</strong> Hassan Ragab</div>
+                <div class="info-item"><strong>Specialization:</strong> Frontend & Python Desktop Apps</div>
+                <p class="description">Building innovative digital solutions with a focus on clean code and user experience.</p>
+            </section>
 
-            <div class="social-media">
-                <a href="https://github.com/2000HR-pro/HR-CV" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/hassan-ragab-32a0aa3bb.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://wa.me/201121331354" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
+            <section class="card reveal" style="--accent-color: #0dcaf0;">
+                <h2><i class="fas fa-code"></i> Technical Skills</h2>
+                <div class="skills-tags">
+                    <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+                    <span>Python</span> <span>Tkinter</span> <span>GitHub</span>
+                </div>
+            </section>
 
-        <div class="home-img">
-            <div class="img-box">
-                <img src="images/profile.jpg" alt="Hassan Ragab">
-            </div>
-        </div>
-    </section>
+            <section class="card reveal" style="--accent-color: #28a745;">
+                <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                <ul class="exp-list">
+                    <li>
+                        <strong>H.R Links Project</strong>
+                        <a href="Links.html" class="inline-link">view<i class="fas fa-external-link-alt"></i></a>
+                    </li>
+                    <li>Developed Premium Game Store Interfaces</li>
+                    <li>Python GUI Automation Tools</li>
+                </ul>
+            </section>
 
-    <section class="skills" id="skills">
-        <h2 class="heading">Technical <span>Expertise</span></h2>
-        <div class="skills-container">
-            <div class="skill-box">
-                <i class="fab fa-html5"></i>
-                <h3>Web Architecture</h3>
-                <p>Crafting semantic HTML5 and advanced CSS3 layouts with a focus on UX/UI.</p>
-            </div>
-            <div class="skill-box">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript Mastery</h3>
-                <p>Developing dynamic features and interactive components for modern web apps.</p>
-            </div>
-            <div class="skill-box">
-                <i class="fab fa-python"></i>
-                <h3>Python Solutions</h3>
-                <p>Building automated scripts, GUI applications (Tkinter), and logic-driven tools.</p>
-            </div>
-        </div>
-    </section>
+            <section class="card reveal" style="--accent-color: #ffc107;">
+                <h2><i class="fas fa-globe"></i> Languages</h2>
+                <div class="language-item"><span>Arabic</span><span class="lang-level">Native</span></div>
+                <div class="language-item"><span>English</span><span class="lang-level">Intermediate</span></div>
+            </section>
 
-    <footer class="contact-info">
-        <h2 class="heading">Get In <span>Touch</span></h2>
-        <p><i class="fas fa-envelope"></i> hr9084393@gmail.com</p>
-        <p><i class="fas fa-phone"></i> +20 112 133 1354</p>
-        <p>&copy; 2026 Hassan Ragab | All Rights Reserved.</p>
-    </footer>
+            <section class="card contact-section reveal">
+                <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2>
+                <form action="https://formsubmit.co/hr9084393@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </section>
+        </main>
+    </div>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

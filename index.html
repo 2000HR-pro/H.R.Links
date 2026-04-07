@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hassan Ragab | Professional Portfolio</title>
+    <title>Hassan Ragab | Portfolio</title>
     <link rel="icon" type="image/jpeg" href="images/profile.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,8 +13,8 @@
 
     <header>
         <div class="container header-content">
-            <div class="profile-container">
-                <img src="images/profile.jpg" alt="Hassan Ragab" class="profile-img">
+            <div class="images/profile-container">
+                <img src="profile.jpg" alt="Hassan Ragab" class="profile-img">
                 <div class="img-glow"></div> 
             </div>
             <h1>Hassan Ragab <span class="badge">H.R</span></h1>
@@ -25,63 +25,41 @@
     <div class="container">
         <main class="grid-layout">
             <section class="card reveal">
-                <h2><i class="fas fa-user-circle"></i> About Me</h2>
-                <div class="info-item"><strong>Name:</strong> Hassan Ragab</div>
-                <div class="info-item"><strong>Specialization:</strong> Frontend & Python Desktop Apps</div>
-                <p class="description">Building innovative digital solutions with a focus on clean code and user experience.</p>
+                <h2><i class="fas fa-user-circle"></i> نبذة عني</h2>
+                <p><strong>الاسم:</strong> حسن رجب</p>
+                <p>بناء حلول رقمية مبتكرة مع التركيز على الكود النظيف وتجربة المستخدم.</p>
             </section>
 
             <section class="card reveal" style="--accent-color: #0dcaf0;">
-                <h2><i class="fas fa-code"></i> Technical Skills</h2>
+                <h2><i class="fas fa-code"></i> المهارات</h2>
                 <div class="skills-tags">
                     <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
                     <span>Python</span> <span>Tkinter</span> <span>GitHub</span>
                 </div>
             </section>
 
-            <section class="card reveal" style="--accent-color: #ffc107;">
-                <h2><i class="fas fa-globe"></i> Languages</h2>
-                <div class="language-list">
-                    <div class="language-item">
-                        <span class="lang-name">Arabic</span>
-                        <span class="lang-level">Native</span>
-                    </div>
-                    <div class="language-item">
-                        <span class="lang-name">English</span>
-                        <span class="lang-level">Intermediate</span>
-                    </div>
-                </div>
-            </section>
-
             <section class="card contact-section reveal">
                 <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2>
                 
-                <div class="social-links-grid">
-                    <a href="https://github.com/2000hr-pro" target="_blank" class="social-btn github-btn">
-                        <div class="icon-box"><i class="fab fa-github"></i></div>
-                        <span class="btn-text">GitHub</span>
+                <div class="social-links-container">
+                    <a href="https://github.com/2000hr-pro" target="_blank" class="social-btn github">
+                        <i class="fab fa-github"></i> <span>GitHub</span>
                     </a>
                     
-                    <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" class="social-btn linkedin-btn">
-                        <div class="icon-box"><i class="fab fa-linkedin-in"></i></div>
-                        <span class="btn-text">LinkedIn</span>
+                    <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" class="social-btn linkedin">
+                        <i class="fab fa-linkedin-in"></i> <span>LinkedIn</span>
                     </a>
                     
-                    <a href="https://wa.me/201000000000" target="_blank" class="social-btn whatsapp-btn">
-                        <div class="icon-box"><i class="fab fa-whatsapp"></i></div>
-                        <span class="btn-text">WhatsApp</span>
+                    <a href="https://wa.me/201000000000" target="_blank" class="social-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
                     </a>
                 </div>
 
                 <hr class="separator">
 
                 <form action="https://formsubmit.co/hr9084393@gmail.com" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
                     <textarea name="message" rows="4" placeholder="Your Message..." required></textarea>
                     <button type="submit" class="submit-btn">Send Message <i class="fas fa-arrow-right"></i></button>
                 </form>

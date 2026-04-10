@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Hassan Ragab | Web Developer</title>
     <link rel="icon" type="image/jpeg" href="images/profile.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,10 +18,13 @@
 
     <header>
         <a href="#" class="logo">H.<span>R</span></a>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#skills">Expertise</a>
-            <a href="#portfolio">Showcase</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#portfolio">Projects</a>
         </nav>
     </header>
 
@@ -29,11 +32,14 @@
         <div class="home-content">
             <h1>Hi, I'm <span>Hassan Ragab</span></h1>
             <h3>Professional <span class="multiple-text"></span></h3>
-            
             <p class="description">
-                Creating high-performance web experiences with modern frontend technologies, 
-                powered by robust Python backend solutions.
+                Passionate Web Developer dedicated to building sleek, user-centric interfaces and robust digital experiences using modern technologies.
             </p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/hassan-ragab-32a0aa3bb" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/2000HR-pro" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:hr9084393@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
 
         <div class="home-img">
@@ -43,42 +49,38 @@
         </div>
     </section>
 
-    <section class="skills" id="skills">
-        <h2 class="heading">Core <span>Expertise</span></h2>
+    <section class="expertise" id="expertise">
+        <h2 class="heading">Technical <span>Stack</span></h2>
         <div class="skills-container">
             <div class="skill-box">
-                <div class="icon-glow"><i class="fas fa-laptop-code"></i></div>
-                <h3>Frontend Architecture</h3>
-                <p>Building pixel-perfect, responsive interfaces using modern HTML5, CSS3, and JavaScript.</p>
+                <div class="icon-glow"><i class="fas fa-code"></i></div>
+                <h3>Frontend Development</h3>
+                <p>Crafting responsive, high-performance websites using HTML5, CSS3, and JavaScript (ES6+) with a focus on clean UI/UX.</p>
             </div>
             <div class="skill-box">
                 <div class="icon-glow"><i class="fab fa-python"></i></div>
-                <h3>Python Logic</h3>
-                <p>Developing scalable backend automation, data processing, and advanced GUI applications.</p>
-            </div>
-            <div class="skill-box">
-                <div class="icon-glow"><i class="fas fa-rocket"></i></div>
-                <h3>Web Performance</h3>
-                <p>Optimizing web speed and user experience through clean, efficient, and maintainable code.</p>
+                <h3>Python Programming</h3>
+                <p>Building efficient automation scripts and desktop applications using Python, specializing in logic-driven solutions.</p>
             </div>
         </div>
     </section>
 
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Selected <span>Work</span></h2>
+        <h2 class="heading">Featured <span>Work</span></h2>
         <div class="exp-container">
             <div class="exp-card">
                 <div class="exp-info">
-                    <h3>Digital Portfolio Milestone</h3>
-                    <p>A professional web-based identity project showcasing modern design and seamless integration.</p>
-                    <a href="Project-index.html" target="_blank" class="link-btn">View Live <i class="fas fa-external-link"></i></a>
+                    <span class="project-tag">School Task</span>
+                    <h3>HR-CV Digital Project</h3>
+                    <p>A professional digital resume developed as a specialized task for my school to showcase academic and technical milestones.</p>
+                    <a href="Project-index.html" target="_blank" class="link-btn">View Project <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>Built with precision by <span>Hassan Ragab</span> &copy; 2026</p>
+        <p>Crafted with precision by <span>Hassan Ragab</span> &copy; 2026</p>
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

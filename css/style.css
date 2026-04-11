@@ -63,6 +63,28 @@ section { min-height: 100vh; padding: 10rem 9% 5rem; }
 
 footer { padding: 2rem; text-align: center; border-top: 1px solid var(--border-glass); margin-top: 3rem; }
 
+/* تنظيم الكروت لتظهر بجانب بعضها بشكل متناسق */
+.exp-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* الحفاظ على نفس تصميم الكارت الأصلي */
+.exp-card {
+    background: var(--glass);
+    border: 1px solid var(--border-glass);
+    padding: 3rem 2rem;
+    border-radius: 25px;
+    text-align: center;
+    transition: .4s;
+}
+
+.exp-card:hover {
+    border-color: var(--main-color);
+    transform: translateY(-10px);
+}
 /* ================== RESPONSIVE ADJUSTMENTS ================== */
 
 @media (max-width: 1024px) {
